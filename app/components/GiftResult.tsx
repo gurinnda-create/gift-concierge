@@ -190,7 +190,7 @@ export default function GiftResult({ gifts, prefs, onRestart }: GiftResultProps)
 
                                 <div className="mt-6 flex flex-wrap gap-2">
                                     <a
-                                        href={`https://www.amazon.co.jp/s?k=${encodeURIComponent(gift.name)}`}
+                                        href={`https://www.amazon.co.jp/s?k=${encodeURIComponent(gift.name)}&tag=giftconcierge-22`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className={clsx("flex-1 min-w-[80px] py-2 text-center font-bold rounded-lg text-xs flex items-center justify-center gap-1 transition-all", {
