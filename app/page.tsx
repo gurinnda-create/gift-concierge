@@ -33,16 +33,10 @@ export default function Home() {
       const data = await res.json();
       setRecommendations(data);
       setStep('result');
-    } catch (e) {
+    } catch (e: any) {
       console.error("Failed to get recommendations", e);
-      // Fallback to mock if API fails? Or just alert.
-      // For now, let's keep the mock fallback for robustness during demo if key is invalid
-      console.log("Falling back to mock data...");
-
-      // ... original mock logic snippet or just simple fallback
-      const filtered = MOCK_GIFTS.slice(0, 3);
-      setRecommendations(filtered);
-      setStep('result');
+      alert(`エラーが発生しました: ${e.message}`);
+      setStep('form'); // Go back to form on error
     }
   };
 
