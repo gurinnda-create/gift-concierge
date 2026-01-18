@@ -203,7 +203,7 @@ export default function GiftResult({ gifts, prefs, onRestart }: GiftResultProps)
                                         <ExternalLink size={12} />
                                     </a>
                                     <a
-                                        href={`https://search.rakuten.co.jp/search/mall/${encodeURIComponent(gift.name)}`}
+                                        href={`https://hb.afl.rakuten.co.jp/hgc/5026c068.716cbf0d.5026b962.3c6c4724/?pc=${encodeURIComponent(`https://search.rakuten.co.jp/search/mall/${gift.name}`)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className={clsx("flex-1 min-w-[80px] py-2 text-center font-bold rounded-lg text-xs flex items-center justify-center gap-1 transition-all", {
