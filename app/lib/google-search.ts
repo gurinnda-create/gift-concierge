@@ -18,7 +18,7 @@ export async function searchGoogleImages(query: string): Promise<string | null> 
 
     try {
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 2000); // 2 second timeout
+        const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
 
         // Simple search - Amazon only for best product images
         const searchQuery = `${query} site:amazon.co.jp`;
